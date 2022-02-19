@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 1300px;
+    margin: auto;
+    
+}
+a{
+    text-decoration: none;
+
+}
+
+/* header section css */
+.header{
+    width: 100%;
+    height: 20px;
+    position: fixed
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #EEEEEE;
+    
+}
+.logo{
+    margin-right: 60px;
+}
+.nav-item{
+    display: flex;
+}
+
+
+.nav-item ul li{
+    display: inline-block;
+    list-style: none;
+    line-height: 40px;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 30px;
+    transition: 0.5s;
+    
+    
+    
+}
+.nav-item ul li a{
+    color: #0C1E7F;
+    font-size: 20px;
+}
+.nav-item ul li:hover{
+    color: #DD4A48;
+    transform: scale(1,1);
+    transition: 0.5s;
+}
+.nav-item ul li{
+    position: relative;
+}
+.nav-item ul li::before{
+    content: '';
+    width: 0px;
+    height: 3px;
+    background-color: #EF6D6D;
+    position: absolute;
+    left: 0px;
+    bottom: -3px;
+    transition: 0.5s;
+}
+.nav-item ul li:hover::before{
+    width: 100%;
+    transition: 0.5s;
+}
+.nav-item ul li::after{
+    content: '';
+    width: 0px;
+    height: 3px;
+    background-color: #d40000;
+    position: absolute;
+    right: 0px;
+    top: -5px;
+    transition: 0.5s;
+}
+.nav-item ul li:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+.menu-btn button{
+    background-color: #EF6D6D;
+    margin-top: 20px;
+    margin-left: 15px;
+    padding: 17px 30px;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 5%;
+
+}
+.menu-btn button:hover{
+    background-color: #146356;
+}
+.menu-btn button{
+    position: relative;
+    z-index: 100;
+}
+.menu-btn button::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 0%;
+    background-color: #146356;
+    transition: 0.5s;
+    z-index: -1;
+}
+.menu-btn button:hover::before{
+    width: 100%;
+    transition: 0.5s;
+    
+}
+.box{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right, #94B49F,#1C658C,#219F94);
+    padding-top: 15%;
+}
+.form-box{
+    width: 700px;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+.form-row{
+    display: flex;
+    background-color: white;
+}
+.form-left, .form-right{
+    flex-basis: 50%;
+}
+
+.form-content h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+.form-group{
+    margin: 16px 0px;
+    display: block;
+    width: 100%;
+}
+.form-control{
+    padding: 14px 10px;
+    width: 42%;
+}
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.f-b-42{
+    flex-basis: 42%;
+}
+.f-b-48{
+    flex-basis: 48%;
+}
+.my-4{
+    margin-top: 10px;
+}
+.form-control:focus{
+    outline: none;
+    border: none;
+    outline-color: red;
+    border-bottom: 2px solid red;
+}
+.form-control::placeholder{
+    color: green;
+}
+.my-2{
+    margin: 32px 0px;
+    color: green;
+}
+.form-group span{
+    color: green;
+    margin-right: 32px;
+}
+.form-group label{
+    margin-right: 16px;
+
+}
+.sl-c {
+    padding: 14px 0px;
+    border-color: green;
+    color: green;
+    border-radius: 7%;
+}
+.form-group button{
+    padding: 14px 10px;
+    color: green;
+    border-radius: 7%;
+}
+.my-btn{
+    margin-right: 25px;
+}
+.container{
+    width: 100%;
+    
+}
+.menu-bar{
+    display: flex;
+    
+}
+.fluid{
+    width: 100%;
+    height: auto;
+    
+    
+}
+.left-menu, .right-menu{
+    flex-basis: 50%;
+}
+
+.left-menu{
+    background: linear-gradient(#94B49F, #EEEEEE);
+}
+.left-menu p{
+    
+    font-size: 20px;
+    line-height: 50px;
+    color: #2C3333;
+    
+}
+.left-menu h2{
+    
+    font-weight: 600;
+    color: #03045E;
+    margin-left: 30%;
+}
+.box{
+    width: 100%;
+    height: auto;
+}
+
+.box-img-p{
+    display: grid;
+    
+}
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #9c9c9c;
+}
+.footer-img h1{
+    font-weight: 500;
+    color: #03045E;
+    text-align: center;
+}
+.footer-img img{
+    margin-left: 50%;
+}
+
